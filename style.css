@@ -19,11 +19,20 @@ body{
   border-radius: 50px;
   background-color: rgb(0, 0, 0);
 }
+
 #image_phone{
-  position:relative;
+  width: 600px;
+ display: flex;
   margin-top:10px;
   justify-content: center;
 } 
+@media only screen and (max-width:600px) { 
+  #image_phone{
+    width:300px;
+    justify-content: center;
+  }
+ }
+
 #head_blog{
   margin-left: 30px;
   margin-top:100px;
@@ -47,7 +56,14 @@ body{
   height: 550px;
   position: absolute;
   display: flex;
+  background-attachment:fixed;
 }
+/* @media only screen and (max-height:1000px) {
+  
+  #background_img {
+    height:1000px;
+  }
+} */
 .card{
   margin: 30px;
   border:none;
@@ -88,11 +104,27 @@ span{
     fill: #e9e6e6;
 }
 #btm{
-  margin:10px;
+  margin:50px;
 }
+
+@media only screen and (max-width:100px) { 
+  #btm{
+    width:900px;
+  }
+ }
+
 #btm_01:hover{
   background-color: rgba(87, 162, 238, 0.386);
-  color:black ;
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.9);
 
+}
+#phone_image{
+  width:500px;
+}
+@media only screen and (max-width:500px) {
+  
+  #phone_image {
+    width:300px;
+  }
 }
 
